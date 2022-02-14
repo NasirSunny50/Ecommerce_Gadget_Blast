@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nasirsunny.ecommerce_gadget_blast.ecommerce_gadget_blast">
    <application
+        android:usesCleartextTraffic="true"
         android:label="ecommerce_gadget_blast"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
