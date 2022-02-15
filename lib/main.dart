@@ -1,4 +1,6 @@
+import 'package:ecommerce_gadget_blast/pages/dashboard_page.dart';
 import 'package:ecommerce_gadget_blast/pages/launcher_page.dart';
+import 'package:ecommerce_gadget_blast/pages/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +23,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: LauncherPage(),
-      routes: {LauncherPage.routeName: (context) => LauncherPage()},
+      routes: {
+        LauncherPage.routeName: (context) => LauncherPage(),
+        LoginPage.routeName: (context) => LoginPage(),
+        DashboardPage.routeName: (context) => DashboardPage(),
+      },
     );
   }
 }
