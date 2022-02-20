@@ -1,4 +1,5 @@
 import 'package:ecommerce_gadget_blast/auth/auth_service.dart';
+import 'package:ecommerce_gadget_blast/pages/new_product_page.dart';
 import 'package:flutter/material.dart';
 
 import 'login_page.dart';
@@ -35,8 +36,7 @@ class _DashboardPageState extends State<DashboardPage> {
               style: ElevatedButton.styleFrom(
                 primary: Colors.orange.shade300,
               ),
-              onPressed: (){
-              },
+              onPressed: () => Navigator.pushNamed(context, NewProductPage.routeName),
               child: Text('Add Product'),
           ),
 
